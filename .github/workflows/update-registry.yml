@@ -1,0 +1,57 @@
+name: Actualizar registro de keys de Foundry
+
+# Regenera foundry-registry.json desde la REST API de Figma.
+# El plugin lo baja solo: no hace falta una versión nueva del plugin
+# en Figma Community.
+on:
+  schedule:
+    - cron: '0 6 * * 1' # todos los lunes 06:00 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build-registry.mjs'
+
+jobs:
+  build-registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar registro
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          # JSON con la lista de archivos, p.ej.
+          # [{"fileKey":"...","name":"Foundry Components"}, ...]
+          FOUNDRY_FILES: ${{ secrets.FOUNDRY_FILES }}
+        run: |
+          node scripts/build-registry.mjs \
+            --out foundry-registry.json \
+            --no-bundle \
+            --redact-sources
+
+      - name: Verificar que el registro no se vació
+        run: |
+          COUNT=$(node -e "const r=require('./foundry-registry.json');console.log(r.componentKeys.length+r.componentSetKeys.length)")
+          echo "Keys en el registro: $COUNT"
+          if [ "$COUNT" -lt 1000 ]; then
+            echo "El registro tiene menos de 1000 keys. Algo falló: no se publica."
+            exit 1
+          fi
+
+      - name: Commit y push
+        run: |
+          git config user.name  "foundry-bot"
+          git config user.email "foundry-bot@users.noreply.github.com"
+          git add foundry-registry.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios en el registro."
+          else
+            git commit -m "chore: actualizar keys de Foundry"
+            git push
+          fi
