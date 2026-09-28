@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "version": "2026-09-21T11:56:53.562Z",
-  "generatedAt": "2026-09-21T11:56:53.562Z",
+  "version": "2026-09-28T12:51:22.600Z",
+  "generatedAt": "2026-09-28T12:51:22.600Z",
   "sources": [
     {
       "name": "Foundry Components",
@@ -11,9 +11,9 @@
     },
     {
       "name": "Foundry Tables",
-      "componentCount": 362,
-      "componentSetCount": 168,
-      "privateCount": 61
+      "componentCount": 369,
+      "componentSetCount": 171,
+      "privateCount": 64
     },
     {
       "name": "Foundry Tokens",
