@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "version": "2026-09-28T12:51:22.600Z",
-  "generatedAt": "2026-09-28T12:51:22.600Z",
+  "version": "2026-10-05T13:32:44.628Z",
+  "generatedAt": "2026-10-05T13:32:44.628Z",
   "sources": [
     {
       "name": "Foundry Components",
@@ -23,9 +23,9 @@
     },
     {
       "name": "Foundry Patterns",
-      "componentCount": 527,
+      "componentCount": 529,
       "componentSetCount": 268,
-      "privateCount": 153
+      "privateCount": 156
     },
     {
       "name": "Foundry Icons",
