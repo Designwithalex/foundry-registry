@@ -1,18 +1,18 @@
 {
   "schema": 2,
-  "version": "2026-10-12T14:22:43.289Z",
-  "generatedAt": "2026-10-12T14:22:43.290Z",
+  "version": "2026-10-19T12:03:39.831Z",
+  "generatedAt": "2026-10-19T12:03:39.831Z",
   "sources": [
     {
       "name": "Foundry Components",
-      "componentCount": 1062,
-      "componentSetCount": 253,
+      "componentCount": 1066,
+      "componentSetCount": 255,
       "privateCount": 64
     },
     {
       "name": "Foundry Tables",
-      "componentCount": 372,
-      "componentSetCount": 174,
+      "componentCount": 373,
+      "componentSetCount": 175,
       "privateCount": 65
     },
     {
@@ -23,9 +23,9 @@
     },
     {
       "name": "Foundry Patterns",
-      "componentCount": 776,
-      "componentSetCount": 373,
-      "privateCount": 232
+      "componentCount": 780,
+      "componentSetCount": 376,
+      "privateCount": 231
     },
     {
       "name": "Foundry Icons",
@@ -2738,6 +2738,7 @@
     "4af0d515a943df584284ae222d3b7a226b9b6ca9",
     "4af41fd4e212d1dd1722e8aa0095d73365dafc08",
     "4afa97bc12b85c20b3059e2634eb2a174722ddd4",
+    "4b01084ff0214c4b2a18615694983d9eee643aed",
     "4b01ce48fdd0d4ebe043482cf726c1e6de945f2c",
     "4b02d0dadf53a9fdd37d002e4f3cdb2f7a7e7f33",
     "4b130b4c60831253b34f43ccf65b1892be08bf3b",
@@ -3988,6 +3989,7 @@
     "6fb4d70cba1edeeda92741fcab95afe6f6a20f4a",
     "6fc13b0f74b09bb2649f61539f76d91c967bf968",
     "6fc17896bfc9787715b806be9252f77c7f2b83bd",
+    "6fc43a2aa407843d3660e98646d950fa11fc24ea",
     "6fc500899f71116137a5a949bf38f42acb578d07",
     "6fc7ca86032e98472090726d877e428dfebfa39a",
     "6fcbbfa3d7531bb434cc2a3e3c607f4e3136f80e",
@@ -5712,7 +5714,6 @@
     "9fa9a155594a1c3985bf969b82932fbbe226fa87",
     "9fad6d08eedb69f12a9afefc21c6beb54fd5c034",
     "9fb6968e14eb4b1743efe60e5f5dcb1b577adfd5",
-    "9fbcc7ec7b079034fa88d8c845936e7aa234e14f",
     "9fbd415a65ea23ff93e517a37d7f15c305d6277d",
     "9fc2a3bb4ec6cb4814596c13cdaf7dbdfede70b7",
     "9fc84e2ae402a3d82762684ce53a18eeadef711f",
@@ -8537,6 +8538,7 @@
     "eff53901f30ca9bcf5852c9cf66fef223bc95dee",
     "eff8232eb3b52a5f24b38dbdaf2b873f1c5a2e45",
     "effa43f07087e39816640cd85a49a317c64362ee",
+    "efff86eeb79e9c809993b162b1ffff3c81c81a3b",
     "f0032c18f68db93a79e6b1e2f6ecc142c26c6a73",
     "f00cfab21c61bf644fa5ebf3a5140f73c68149e0",
     "f01cc123e1ecef07aafdcaa73730b18167414d3c",
@@ -9077,6 +9079,7 @@
     "00762a5df04af9d146f1942d5963b83f74bbb169",
     "009c6584e903f2aa0b297fd29312f716e5f6e56f",
     "00a46f866dfdf7aba4e6fcb24b88439cdee4ba94",
+    "00a5d66c64f26dacea4369f21cc658e2171e457e",
     "00d8d0d0e22320386f4b8ab8bc78dd4d248077a0",
     "00de65973e3b0dd3607eef57b4955737549ee375",
     "0104ebd0bfdb472a702ba8f5b6405823ba356262",
@@ -12391,6 +12394,7 @@
     "d33fda8e654436334261e4c76a9fdea0887cf3b0",
     "d34cbec8cee882292cf6def58b48809196abbc89",
     "d36beb7941b9dbd1abd40468d804ed65d93beb83",
+    "d3860f67b1d84c69b29bbb50c034bf4fb723c59f",
     "d3aadf72206a7364d1517d0ea9601382145a74b7",
     "d3ac130f8554ec9e6e615ad9b111d6fe4754aa05",
     "d3ad2a3caa1bcc8dedf5a54a1ebd1d0b650533a2",
